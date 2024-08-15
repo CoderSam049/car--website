@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-image: linear-gradient(90deg, black, rgba(45, 43, 43, 0.768));
+    height: 100vh;
+    padding-inline: 10px;
+}
+
+nav {
+    display: flex;
+    max-width: 1400px;
+    margin-inline: auto;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+nav a{
+    color: inherit;
+    text-decoration: none;
+}
+nav a:hover{
+    border-bottom: 2px solid rgb(205, 110, 2);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1.2rem;
+}
+
+nav ul li {
+    cursor: pointer;
+    font-weight: 800;
+
+}
+
+nav ul li:hover {
+    color: rgb(215, 162, 0);
+
+
+}
+
+.hero {
+    margin-top: 2rem;
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 8px 15px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.carfeature {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+.carnames {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.el {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    opacity: 0.8;
+}
+
+.el img {
+    width: 20px;
+}
+
+.car {
+    max-width: 400px;
+    margin-top: 1rem;
+}
+
+.car img {
+    width: 100%;
+}
+
+.feature {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    max-width: 400px;
+    margin-inline: auto;
+    align-items: center;
+}
+
+.feature p {
+    font-size: 1.2rem;
+}
+
+.feature img {
+    width: 50px;
+}
+
+.perfo p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.ham {
+    display: none;
+}
+
+.ham img {
+    width: 30px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.temp {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.temp img {
+    margin-bottom: 1rem;
+}
+
+.circlebox {
+    display: flex;
+    justify-content: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 4px 5px rgba(155, 248, 248, 0.089);
+
+}
+
+.circle2 {
+    width: 132px;
+    height: 132px;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.circle:hover,
+.circle2:hover {
+    transition: 0.8s;
+    background-color: rgb(42, 165, 5);
+
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 1px 1px 4px 5px rgba(9, 9, 9, 0.296);
+}
+
+
+.carsfeature {
+    max-width: 1200px;
+    margin-inline: auto;
+
+}
+
+.futuretechnology {
+    display: flex;
+    margin-top: 2.8rem;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-around;
+
+
+}
+
+.futurecarimg {
+    max-width: 480px;
+}
+
+.futurecarimg img {
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.imageup {
+
+    max-width: 150px;
+
+    float: right;
+    background-color: rgba(28, 27, 27, 0.699);
+    border-radius: 10px;
+    padding: 30px 40px;
+    transform: translate(0px, -120px);
+}
+
+.futuretechnology button {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgba(15, 12, 222, 0.526);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.futuretechnology button:active {
+    background-color: rgba(12, 75, 222, 0.914);
+}
+
+.about {
+    margin-block: 1.5rem;
+    max-width: 400px;
+}
+
+.about h2 {
+    margin-bottom: 2rem;
+}
+
+.about p {
+    margin-bottom: 2rem;
+    opacity: 0.6;
+    font-size: 1.1rem;
+}
+
+.choose-fav {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-block: 1rem;
+}
+
+.cars {
+    white-space: nowrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: scroll;
+    min-height: 390px;
+
+
+}
+
+.cars p {
+    opacity: 0.7;
+}
+
+::-webkit-scrollbar {
+    display: inline;
+}
+
+.porsche {
+    background-image: linear-gradient(61deg, black, white);
+    max-width: 350px;
+    padding: 10px 25px;
+    border-radius: 10px;
+
+    display: inline-block;
+
+}
+
+.porsche+.porsche {
+    margin-left: 1rem;
+}
+
+.porsche .porche1 {
+    width: 100%;
+}
+
+.speedTime {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 220px;
+    margin-top: 12px;
+    gap: 5px;
+
+
+}
+
+.firstcar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+.verticalcar {
+    max-width: 400px;
+    margin-inline: auto;
+    position: relative;
+
+
+}
+
+.verticalcar img {
+    width: 100%;
+}
+
+
+
+.specifications {
+    background-color: rgba(40, 39, 39, 0.564);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px 35px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+
+}
+
+.sp-2 {
+    top: 350px;
+    left: 250px;
+}
+
+.sp-3 {
+    top: 640px;
+    left: 20px;
+}
+
+.luxary {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 300px;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+.all h2 {
+    background-color: rgb(40, 86, 235);
+    padding: 20px;
+    border-radius: 10%;
+}
+
+.all img {
+    width: 35px;
+
+}
+
+.l-img {
+    background-color: rgba(83, 77, 77, 0.448);
+    padding-inline: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    height: 65px;
+    align-content: center;
+}
+
+.l-img:hover {
+    background-color: rgba(238, 15, 15, 0.381);
+    
+
+}
+.l-img img:hover{
+    transition: 0.4s;
+    transform: scale(1.3);
+}
+
+.luxary-car .cars {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 15px;
+    min-height: 200px;
+}
+
+
+
+.luxary-logo {
+    margin-top: 2rem;
+    max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+footer{
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 2.1rem;
+ padding-block: 3rem;
+}
+
+
+footer .logo p{
+    max-width: 200px;
+    line-height: 1.4;
+    margin-top: 1rem;
+    opacity: 0.7;
+
+}
+footer li{
+   list-style-type: none;
+   margin-top: 1rem;
+   cursor: pointer;
+   opacity: 0.7;
+
+}
+
+
+footer .contact-us{
+    display: flex;
+    align-items: center;column-gap: 1.5rem;
+}
+footer .contact-us img:hover{
+transform: scale(1.4);
+}
+footer .contact-us img{
+    width: 25px;
+}
+
+.copyright{
+    text-align: center;
+    padding-block: 1rem;
+    opacity: 0.8;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    .responsive {
+        background-color: rgba(58, 65, 65, 0.816);
+        flex-direction: column;
+        width: 200px;
+
+        position: absolute;
+        top: 0px;
+        right: 0;
+        padding: 10px;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .responsive li {
+        list-style: 1.8rem;
+        padding: 10px;
+    }
+
+    .ham {
+        display: block;
+        z-index: 22;
+    }
+    footer{
+        margin-top: 1.8rem;
+        display: flex;
+     flex-direction: column;
+    }
+
+
+
+    html {
+        font-size: 13px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+
+    .sp-2 {
+        top: 350px;
+        left: 100px;
+    }
+
+    .luxary-car .cars {
+
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    }
+    .sp-3 {
+        top: 460px;
+        left: 10px;
+    }
+  
+
+
+
+
+
+}
+
+
+@media(max-width:950px) {
+    .futuretechnology {
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+
+    .futurecarimg {
+        max-height: 310px;
+    }
+ 
+    
+  
+}
